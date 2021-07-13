@@ -1,0 +1,12 @@
+
+ion-fab{
+    position: fixed;
+    bottom: 1rem;
+    left: 40%;
+    ion-fab-button{
+        width: 5rem;
+        height: 5rem;
+        --border-radius: 1rem;
+        --background: #3932c0;
+    }
+}

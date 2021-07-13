@@ -1,0 +1,61 @@
+<!-- <ng-template ngFor let-item [ngForOf]="categories" let-i="index" [ngForTrackBy]="trackByFn">
+  
+</ng-template> -->
+
+<ion-grid>
+  <ion-row>
+    <ion-col button="true" routerLink="/tabs/tab1">
+      <div class="w-full flex items-center justify-center">
+        <div
+          [class]="
+          active === 'all' ? 'w-12 h-12 bg-purple-500 mb-2 rounded-full flex items-center justify-center shadow-xl' : 'w-12 h-12 bg-purple-200 mb-2 rounded-full flex items-center justify-center shadow-xl'
+          "
+        >
+          <ion-icon name="list" [class]="active === 'all' ? 'text-gray-100 text-xl' : 'text-purple-500 text-xl'"></ion-icon>
+
+        </div>
+      </div>
+      <span [class]="active === 'all' ? 'block text-center text-xs text-gray-800 font-semibold' : 'block text-center text-xs text-gray-400'"> Tous</span>
+
+    </ion-col>
+    <ion-col  routerLink="/tabs/tab1/recent-products">
+      <div class="w-full flex items-center justify-center">
+        <div
+        [class]="
+        active === 'recent' ? 'w-12 h-12 bg-purple-500 mb-2 rounded-full flex items-center justify-center shadow-xl' : 'w-12 h-12 bg-purple-200 mb-2 rounded-full flex items-center justify-center shadow-xl'
+        "
+        >
+          <ion-icon name="rocket" [class]="active === 'recent' ? 'text-gray-100 text-xl' : 'text-purple-500 text-xl'"></ion-icon>
+        </div>
+      </div>
+      <span [class]="active === 'recent' ? 'block text-center text-xs text-gray-800 font-semibold' : 'block text-center text-xs text-gray-400'">Récentes</span>
+
+    </ion-col>
+    <ion-col routerLink="/tabs/tab1/popular-products">
+      <div class="w-full flex items-center justify-center">
+        <div
+        [class]="
+        active === 'popular' ? 'w-12 h-12 bg-purple-500 mb-2 rounded-full flex items-center justify-center shadow-xl' : 'w-12 h-12 bg-purple-200 mb-2 rounded-full flex items-center justify-center shadow-xl'
+        "
+        >
+          <ion-icon name="diamond" [class]="active === 'popular' ? 'text-gray-100 text-xl' : 'text-purple-500 text-xl'"></ion-icon>
+        </div>
+      </div>
+      <span  [class]="active === 'popular' ? 'block text-center text-xs text-gray-800 font-semibold' : 'block text-center text-xs text-gray-400'">Populaires</span>
+    </ion-col>
+    <!-- <ion-col routerLink="/tabs/tab1/lost-products">
+      <div class="w-full flex items-center justify-center">
+        <div
+        [class]="
+        active === 'lost' ? 'w-12 h-12 bg-purple-500 mb-2 rounded-full flex items-center justify-center shadow-xl' : 'w-12 h-12 bg-purple-200 mb-2 rounded-full flex items-center justify-center shadow-xl'
+        "
+        >
+          <ion-icon name="telescope" [class]="active === 'lost' ? 'text-gray-100 text-xl' : 'text-purple-500 text-xl'"></ion-icon>
+        </div>
+      </div>
+      <span [class]="active === 'lost' ? 'block text-center text-xs text-gray-800 font-semibold' : 'block text-center text-xs text-gray-400'">Objets perdu</span>
+    </ion-col> -->
+    
+  </ion-row>
+</ion-grid>
+

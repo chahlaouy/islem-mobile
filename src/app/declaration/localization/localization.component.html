@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-toolbar class="py-5 w-full h-24 flex items-center">
+      <ion-buttons slot="start">
+        <ion-menu-button>
+          <ion-icon name="menu" class="text-3xl text-purple-500"></ion-icon>
+        </ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        <span class="block text-lg font-normal">Addresse</span>
+      </ion-title>
+    </ion-toolbar>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+
+  <div class="flex items-center justify-center bg-gray-100 w-full h-full text-gray-800">
+    <div class="w-64">
+
+      <label class="block mb-8">
+        <span class="text-sm text-gray-800">Ville</span>
+        <input type="email" class="bg-white mt-1 block w-full rounded-md border-purple-500 shadow-sm focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50" placeholder="ville">
+      </label>
+
+      <label class="block mb-8">
+        <span class="text-sm text-gray-800">Gouvernerat</span>
+        <input type="text" class="bg-white mt-1 block w-full rounded-md border-purple-500 shadow-sm focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50" placeholder="Gouvernerat">
+      </label>
+
+      <label class="block mb-8">
+        <span class="text-sm text-gray-800">ZIP</span>
+        <input type="number" class="bg-white mt-1 block w-full rounded-md border-purple-500 shadow-sm focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50" placeholder="zip code">
+      </label>
+      
+    </div>
+  </div>
+  <ion-fab>
+    <ion-fab-button class="flex-row" (click)="nextStepNumberOfSeats()">
+      <ion-icon name="arrow-forward-outline" size="large" ></ion-icon>
+    </ion-fab-button> 
+  </ion-fab>
+</ion-content> 
